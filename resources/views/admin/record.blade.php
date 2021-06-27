@@ -46,14 +46,15 @@ scratch. This page gets rid of all links and provides the needed markup only. --
 
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3" action="{{ route('record.index') }}" method="GET" id="buscador">
-              <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" id="search" type="search" placeholder="Fecha: 'AAAA-MM'" aria-label="Search">
-                <div class="input-group-append">
-                  <button class="btn btn-navbar" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" id="search" type="search"
+                        placeholder="Fecha: 'AAAA-MM'" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
-              </div>
             </form>
 
         </nav>
@@ -265,26 +266,16 @@ scratch. This page gets rid of all links and provides the needed markup only. --
 
                     <!-- Instagram -->
                     <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="https://www.instagram.com/camii.vazquezz_/" role="button" data-mdb-ripple-color="dark"><i
+                        href="https://www.instagram.com/rafa_ortega89/" role="button" data-mdb-ripple-color="dark"><i
                             class="fab fa-instagram"></i></a>
 
-                    <!-- Facebook -->
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="https://www.facebook.com/camifrascarelli"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-facebook"></i
-                        ></a>
-
-                    <!-- Twitter -->
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="https://twitter.com/Camfrascarelli?s=09"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-twitter"></i
-                        ></a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                        href="https://www.linkedin.com/in/rafael-a-ortega-valderrama-ab7a1aa8/" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/raortega8906"
+                        role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
             </div>
@@ -343,13 +334,12 @@ scratch. This page gets rid of all links and provides the needed markup only. --
 
         // Para añadir / en la url en Desarrollo.
         var url = 'http://127.0.0.1:8000';
-        window.addEventListener('load', function (){
-           // Buscador:
-            $('#buscador').submit(function(){
-                $(this).attr('action',url+'/record/'+$('#buscador #search').val());
+        window.addEventListener('load', function() {
+            // Buscador:
+            $('#buscador').submit(function() {
+                $(this).attr('action', url + '/record/' + $('#buscador #search').val());
             })
         })
-
     </script>
 </body>
 
