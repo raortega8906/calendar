@@ -38,6 +38,9 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/calendar', function() {
             return view('admin.calendar');
         });
+
+        // Ruta sum:
+        Route::get('/sum', [EventController::class, 'sumHrs'])->name('sum.sum');
         
         // Rutas record
         Route::group(['prefix' => 'record'], function() {
@@ -50,9 +53,6 @@ Route::group(['middleware' => 'auth'], function() {
             Route::delete('/{event}', [EventController::class, 'destroy'])->name('record.destroy');
 
         });
-
-        // Ruta sum:
-        Route::get('/sum', [EventController::class, 'sumHrs'])->name('sum.sum');
 
     });
 
