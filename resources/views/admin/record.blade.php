@@ -333,7 +333,11 @@ scratch. This page gets rid of all links and provides the needed markup only. --
         };
 
         // Para añadir / en la url en Desarrollo.
-        var url = 'http://127.0.0.1:8000';
+        // var url = 'http://127.0.0.1:8000';
+
+        // Para añadir / en la url en Producción.
+        var url = 'http://calendarworkweb.herokuapp.com';
+
         window.addEventListener('load', function() {
             // Buscador:
             $('#buscador').submit(function() {
