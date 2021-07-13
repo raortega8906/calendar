@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 // Rutas Auth
-Route::group(['middleware' => 'auth', 'middleware' => 'is_admin'], function() {
+Route::group(['middleware' => ['auth', 'is_admin'], function() {
 
     // // Rutas Admin
     // Route::group(['middleware' => 'is_admin'], function() {
