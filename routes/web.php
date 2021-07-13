@@ -23,16 +23,11 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-// Ruta Registro:
-// Route::get('/register', function() {
-//     return view('auth.register');
-// });
-
 // Rutas Auth
-Route::group(['middleware' => 'auth'], function() {
+Route::group(['middleware' => 'auth', 'middleware' => 'is_admin'], function() {
 
-    // Rutas Admin
-    Route::group(['middleware' => 'is_admin'], function() {
+    // // Rutas Admin
+    // Route::group(['middleware' => 'is_admin'], function() {
 
         // Ruta calendar:
         Route::get('/calendar', function() {
@@ -54,6 +49,6 @@ Route::group(['middleware' => 'auth'], function() {
 
         });
 
-    });
+    // });
 
 });
