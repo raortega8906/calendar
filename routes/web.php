@@ -24,9 +24,9 @@ Route::get('/', function () {
 });
 
 // Ruta Registro:
-Route::get('/register', function() {
-    return view('auth.register');
-});
+// Route::get('/register', function() {
+//     return view('auth.register');
+// });
 
 // Rutas Auth
 Route::group(['middleware' => 'auth'], function() {
