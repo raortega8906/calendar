@@ -24,10 +24,7 @@ Route::get('/', function () {
 });
 
 // Rutas Auth
-Route::group(['middleware' => ['auth', 'is_admin'], function() {
-
-    // // Rutas Admin
-    // Route::group(['middleware' => 'is_admin'], function() {
+Route::group(['middleware' => ['auth', 'is_admin']], function() {
 
         // Ruta calendar:
         Route::get('/calendar', function() {
@@ -48,7 +45,5 @@ Route::group(['middleware' => ['auth', 'is_admin'], function() {
             Route::delete('/{event}', [EventController::class, 'destroy'])->name('record.destroy');
 
         });
-
-    // });
 
 });
