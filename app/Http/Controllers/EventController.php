@@ -17,6 +17,7 @@ class EventController extends Controller
         }else{
             $events = Event::orderBy('date', 'desc')->paginate(15);
         }
+
         return view('admin.record', compact('events'));
     }
 
@@ -24,7 +25,6 @@ class EventController extends Controller
         if($request['date'] == ''){
             return back()->with('status-error', 'La fecha debe ser entrada');
         }
-
         elseif($request['status'] == "Trabajo"){
             if($request['time_ini'] == '' || $request['time_end'] == ''){
                 return back()->with('status-error', 'El horario de trabajo debe ser entrado');
@@ -93,11 +93,13 @@ class EventController extends Controller
 
     public function destroy(Event $event){
         $event->delete();
+
         return back();
     }
 
     public static function showEvents(){
         $global['events'] = Event::all();
+        
         return $global;
     }
 
@@ -106,12 +108,14 @@ class EventController extends Controller
         $end = $request['date_end'];
         $events = Event::all();
         $total = 0;
+
         foreach($events as $event) {
             if($event->date >= $ini && $event->date <= $end){
                 $parts = explode(':', $event->cant_hrs);
                 $total += ($parts[1]*60 + $parts[0]*3600)/3600;
             }
         }
+
         return view('admin.sum', compact('total'));
     }
 

@@ -188,15 +188,15 @@ scratch. This page gets rid of all links and provides the needed markup only. --
                                                             <span class="badge badge-success">Descanso</span>
                                                         @endif
                                                     </td>
-                                                    <td class="float-right">
-                                                        <a class="btn btn-info btn-sm"
+                                                    <td class="float-right d-flex">
+                                                        <a class="btn btn-info btn-sm mx-1"
                                                             href="{{ route('record.edit', $event) }}">
                                                             <i class="fas fa-pencil-alt"></i>
                                                             Editar
                                                         </a>
                                                         <button data-toggle="modal" data-target="#deleteModal"
                                                             data-id="{{ $event->id }}"
-                                                            class="btn btn-danger btn-sm">
+                                                            class="btn btn-danger btn-sm mx-1">
                                                             <i class="fas fa-trash"></i>
                                                             Borrar
                                                         </button>
