@@ -38,7 +38,7 @@ No dude en enviar comentarios y problemas encontrados vía email.
 
 ## Como hacerlo
 
-- Insertar proyecto en carpeta vacía con el comando -> "git clone https://github.com/raortega8906/calendar”.
+- Insertar proyecto en carpeta vacía con el comando: git clone https://github.com/raortega8906/calendar
 - Crear una base de datos vacía.
 - Copie el env.example a .env.
 - Configurar base de datos en config/database.php o en su archivo .env.
