@@ -64,5 +64,3 @@ Para lo anterior es necesario que tenga PHP, MySQL, etc, instalado localmente en
 ## Próximos pasos
 
 Ahora puede comenzar a usar Calendar libremente.
-
----
