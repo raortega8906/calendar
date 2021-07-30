@@ -15,7 +15,7 @@
 
 ## Empezar
 
-   Instalación -> https://github.com/raortega8906/calendar.
+   https://github.com/raortega8906/calendar.
 
 ## Retroalimentación
 
