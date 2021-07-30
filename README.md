@@ -1,10 +1,10 @@
-## Sobre “Calendar”
+# Sobre “Laravel-Calendar”
 
  Calendar es un sistema de control de horas, que le ayuda al usuario a realizar seguimiento de la cantidad de horas trabajadas, descansos, etc. El sistema es de código abierto y se puede ver y probar en “https://calendarworkweb.herokuapp.com/“.
 
 ## Demo
 
- Pruebe la versión en “https://calendarworkweb.herokuapp.com/“.
+ Pruebe la versión en https://calendarworkweb.herokuapp.com/.
 
 ## Funcionalidades
 
