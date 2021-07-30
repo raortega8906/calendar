@@ -43,14 +43,14 @@ No dude en enviar comentarios y problemas encontrados vía email.
 - Copie el env.example a .env.
 - Configurar base de datos en config/database.php o en su archivo .env.
 - Ejecute los siguientes comandos:
-    composer install
-    php artisan migrate --seed
-    php artisan key:generate
-    npm install
-    npm run dev
+    - composer install
+    - php artisan migrate --seed
+    - php artisan key:generate
+    - npm install
+    - npm run dev
 - Inicie sesión con las credenciales:
-    email: admin@admin.com
-    pass: password
+    - email: admin@admin.com
+    - pass: password
 - Hecho.
 
 ---
