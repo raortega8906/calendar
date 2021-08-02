@@ -4,11 +4,11 @@
 
 El proyecto Calendar es un sistema de control de horas, que le ayuda al usuario a realizar seguimiento de la cantidad de horas trabajadas, descansos, etc.
 
-———
+---
 
 # Desarrollado en Laravel 8.12.
 
-———
+---
 
 ## Requerimientos a cumplir
 
@@ -34,31 +34,32 @@ El proyecto Calendar es un sistema de control de horas, que le ayuda al usuario 
     - email : `admin@admin.com`
     - password : `password`
 
-———
+---
 
 ## Importante
 
 Para lo anterior es necesario que tenga PHP, MySQL, etc, instalado localmente en su pc, para otras opciones, consulte las recomendaciones de Laravel.
 
-———
+---
 
 ## Retroalimentación
 
 No dude en enviar comentarios y problemas encontrados vía email.
 
-———
+---
 
 ## Demo desplegado
 
 https://calendarworkweb.herokuapp.com/
 
-———
+---
 
 ## Licencia 
 
 El proyecto es de código abierto.
 
-———
+---
+
 ## Próximos pasos
 
 Ahora puede comenzar a usar Calendar libremente.
