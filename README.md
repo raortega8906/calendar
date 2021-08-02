@@ -17,7 +17,7 @@ El proyecto Calendar es un sistema de control de horas, que le ayuda al usuario 
 - Búsqueda de días trabajadas y/o descanso.
 - Entrada de intervalos de días para conocer la cantidad de horas trabajadas.
 
-———
+---
 
 ## Como instalar
 
