@@ -22,7 +22,7 @@ El proyecto Calendar es un sistema de control de horas, que le ayuda al usuario 
 ## Como instalar
 
 1. Clonar el repositorio : `git clone https://github.com/raortega8906/calendar.git`
-2. `$ cd Mini-CRM`
+2. `$ cd calendar`
 3. `$ composer install`
 4. `$ cp .env.example .env`
 5. `$ php artisan key:generate`
