@@ -2,41 +2,41 @@
 
 # Calendar
 
-El proyecto Calendar es un sistema de control de horas, que le ayuda al usuario a realizar seguimiento de la cantidad de horas trabajadas, descansos, etc.
+The Calendar project is a time-tracking system that helps users keep track of the number of hours worked, breaks taken, and more.
 
-## Objetivos
+## Objectives
 
-- Entrada de las horas trabajadas o el descanso en el día.
-- Historial de días con las horas trabajadas y visualizarlos en un calendario.
-- Búsqueda de días trabajadas y/o descanso.
-- Entrada de intervalos de días para conocer la cantidad de horas trabajadas.
+- Entry of worked hours or break time for the day.
+- History of days with worked hours, displayed on a calendar.
+- Search for days worked and/or break times.
+- Input intervals of days to calculate the total number of hours worked.
 
-## Como instalar
-Para ejecutar este proyecto es necesario que tenga instalado PHP, MySQL, Apache o Nginx. Para mas información, consulte las recomendaciones de [Laravel](https://laravel.com/docs/8.x).
+## Installation Instructions
+To run this project, you need PHP, MySQL, Apache, or Nginx installed. For more information, refer to [Laravel's recommendations](https://laravel.com/docs/8.x).
 
-### Pasos:
+### Steps:
 
-1. Clonar el repositorio : `git clone https://github.com/raortega8906/calendar.git`
+1. Clone the repository: `git clone https://github.com/raortega8906/calendar.git`
 2. `$ cd calendar`
 3. `$ composer install`
 4. `$ cp .env.example .env`
 5. `$ php artisan key:generate`
-6. Crear BD en **MySQL** o **SQLite**
-7. Credenciales de BD en el archivo `.env`
+6. Create a database in **MySQL** or **SQLite**
+7. Add database credentials in the `.env` file
 8. `$ php artisan migrate --seed`
 9. `$ php artisan serve`
-10. Iniciar sesión con:
-    - email : `admin@admin.com`
-    - password : `password`
+10. Log in with:
+    - email: `admin@admin.com`
+    - password: `password`
 
-## Demo desplegado
+## Deployed Demo
 
 https://calendar.wpcache.es/
 
-## Licencia 
+## License
 
-El proyecto es de código abierto.
+The project is open source.
 
-## Próximos pasos
+## Next Steps
 
-Ahora puede comenzar a usar Calendar libremente.
+You are now free to start using Calendar.
